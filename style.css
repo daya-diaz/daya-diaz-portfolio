@@ -236,7 +236,7 @@ p {
 
 /*-------------------------------PORTFOLIO SECTION-------------------------------*/
 .container-portfolio {
-  padding: 8rem 30rem 17rem 30rem;
+  padding: 10.4rem 30rem 10.4rem 30rem;
   background-color: white;
   display: flex;
   align-items: center;
@@ -316,4 +316,80 @@ p {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+/*-----------------------------------------SKILLS/*-----------------------------------------*/
+.container-skills {
+  padding: 10.4rem 30rem;
+  background-color: var(--background-color);
+}
+
+.container-skills .skills-header {
+  padding-bottom: 8.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-skills .skills-main {
+  display: flex;
+  gap: 9.2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+div.outside {
+  width: 24.7rem;
+  height: 1.2rem;
+  background: var(--hover);
+  border-radius: 1.3rem;
+}
+
+div.inside {
+  height: 100%;
+  border-radius: 1.2rem;
+  background: var(--primary-default);
+}
+
+div.seventy {
+  width: 70%;
+}
+div.fifty {
+  width: 50%;
+}
+div.forty {
+  width: 40%;
+}
+div.thirty {
+  width: 30%;
+}
+
+.progress {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.encompasser {
+  display: flex;
+
+  align-items: center;
+}
+
+.percent {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 148%;
+  color: var(--primary-light);
+}
+
+.skill {
+  font-size: 2rem;
+  line-height: 148%;
+  color: var(--gray-scale-700);
 }
