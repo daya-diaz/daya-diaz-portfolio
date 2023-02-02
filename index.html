@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dayane Santos - UI/UX Designer</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/logo.svg"
+        alt="logo com nome Daya escrito em laranja"
+      />
+      <nav class="header-navigation">
+        <a href="#">HOME</a>
+        <a href="#">PORTIFOLIO</a>
+        <a href="#">SKILLS</a>
+        <a href="#">CONTATO</a>
+      </nav>
+      <a href="" class="header-button"
+        ><span>+55 (81) 99859-5825</span>
+        <img src="./assets/icon-phone.svg" alt="" />
+      </a>
+    </header>
+    <section class="container-home">
+      <div class="main-content">
+      <div class="left-side">
+        <div class="content-home">
+          <h1>Hey galera, </br>eu sou a <span>Daya</span></h1>
+          <div class="sub-title">
+            <span>UI / UX DESIGNER JR.</span>
+            <img src="./assets/deco.svg" alt="Decoração com formato do simbolo chaves na horizontal">
+          </div>
+          <a href="#">dayadiazprofissional@gmail.com</a>
+        </div>
+      
+        <div class="buttons-content-home">
+          <button class="button-cta">Download CV</button>
+          <a href="#">Ver projetos</a>
+        </div>
+      </div>
+      <div class="right-side">
+      <div class="content-right-side">
+        <div class="image-right-side">
+          <img src="./assets/home-img.svg" alt="Foto da UI/UX Designer Junior Dayane Santos. Descrição: Mulher cis branca sorrindo olhando para câmera com o rosto apoiado em uma das mãos fechada. Fundo laranja."> 
+          </div>
+          <div class="experience">
+            +1
+            <span>ANO DE </br>EXPERIÊNCIA</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="float-button">
+      <img src="./assets/float-button.svg" alt="Botão redondo com seta para baixo flutuando na tela para baixo e para cima infinitamente">
+    </div>
+    </section>
+    <section class="container-portfolio">
+      <div class="portfolio-header">
+        <h2>projetos recentes</h2>
+        <div class="portfolio-nav-bar">
+          <button class="navbarPortfolio active" id="btn-1" onclick="addClassActive('btn-1')">UI/UX Design</button>
+          <button class="navbarPortfolio" id="btn-2" onclick="addClassActive('btn-2')">Programming</button>
+        </div>
+      </div>
+      <div class="portfolio-main">
+        <div class="portfolio-container">
+          <img src="./assets/button-arrowLeft.svg" alt="">
+          <div class="card">
+            <img class="img" src="./assets/metMolinaro.jpg" alt="Capa do projeto Método Molinaro">
+            <div>
+              <h3>Projeto Método Molinaro</h3>
+              <p>Co-responsável por projetar uma landing page para uma plataforma educacional em ascensão. Foram utilizadas pesquisas de usuário, prototipação no Figma gerando um aumento significativo nas receitas da plataforma.</p>
+              <a href="#">Ver projeto
+                <img src="./assets/icon-arrowRight.svg" alt="Icon de seta para direita laranja">
+              </a>
+          </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./assets/appHangover.jpg" alt="Capa do projeto App Hangover">
+            <div>
+              <h3>Projeto App Hangover</h3>
+              <p>Co-responsável por projetar uma plataforma de eventos sociais para a Hangover onde utilizamos o Figma para a prototipação, pesquisa com o usuário e análise de concorrentes. </p>
+              <a href="#">Ver projeto
+                <img src="./assets/icon-arrowRight.svg" alt="Icon de seta para direita laranja">
+              </a>
+          </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./assets/siteBrandstore.png" alt="Capa do Projeto BrandStore">
+            <div>
+              <h3>Projeto BrandStore</h3>
+              <p>Co-responsável pela elaboração de uma plataforma de vendas e aluguéis de Ecrãs. Utilizamos o Figma como ferramenta de prototipação e pesquisas de usuário para avaliar a satisfação e efetividade do UI e UX.</p>
+              <a href="#">Ver projeto
+                <img src="./assets/icon-arrowRight.svg" alt="Icon de seta para direita laranja">
+              </a>
+          </div>
+          </div>
+          
+          <img src="./assets/button-arrowRight.svg" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

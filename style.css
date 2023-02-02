@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background-color: #fff7f7;
+  --primary-default: #e95729;
+  --primary-light: #ed7954;
+  --primary-dark: #a33d1d;
+  --hover: #f8e2db;
+  --gray-scale-500: #735a4d;
+  --gray-scale-700: #4b2b1a;
+  font-size: 62.5%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--primary-default);
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 170%;
+  color: var(--gray-scale-700);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 180%;
+  color: var(--gray-scale-500);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 4rem 30rem;
+}
+
+.header-navigation {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  gap: 80px;
+}
+
+.header-navigation a {
+  color: var(--gray-scale-700);
+  font-size: 1.4rem;
+  transition: color 200ms ease-in-out;
+}
+
+.header-navigation a:hover {
+  color: var(--primary-light);
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-default);
+  padding: 1.1rem 4rem;
+  border: 0.2rem solid var(--primary-default);
+  border-radius: 2.7rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.header-button span {
+  line-height: 1;
+}
+
+.header-button:hover {
+  background-color: var(--hover);
+}
+
+.container-home {
+  padding: 8rem 30rem;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  display: flex;
+  width: 100vw;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 15.2rem;
+  width: 50%;
+}
+
+.content-home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.content-home h1 {
+  font-size: 6.4rem;
+  color: var(--gray-scale-600);
+  line-height: 125%;
+}
+.content-home h1 span {
+  color: var(--primary-default);
+}
+.sub-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sub-title span {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 165%;
+  color: var(--primary-light);
+}
+
+.sub-title img {
+  width: 23.1rem;
+}
+.content-home a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--primary-dark);
+  padding-top: 2.4rem;
+}
+.buttons-content-home {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.buttons-content-home button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1.6rem 8.5rem;
+  border-radius: 2.7rem;
+  background-color: var(--primary-default);
+  color: white;
+  border: none;
+  transition: background-color 200ms ease-in-out;
+}
+.buttons-content-home button:hover {
+  background-color: var(--primary-dark);
+}
+
+.buttons-content-home a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--primary-default);
+  border: 2px solid var(--primary-default);
+  padding: 1.6rem 3.2rem;
+  border-radius: 2.7rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.buttons-content-home a:hover {
+  background-color: var(--hover);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3.2rem;
+  width: 50%;
+  justify-content: center;
+}
+.content-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.content-right-side .experience {
+  display: flex;
+  color: var(--primary-dark);
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 135%;
+  align-items: center;
+  gap: 1.2rem;
+}
+.content-right-side .experience span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 125%;
+  color: var(--primary-dark);
+}
+
+.float-button {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.4rem 0 4.6rem 0;
+}
+/*--------------criando um botão flutuante--------------*/
+.float-button img {
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/*--------------criando um botão flutuante--------------*/
+
+/*-------------------------------PORTFOLIO SECTION-------------------------------*/
+.container-portfolio {
+  padding: 8rem 30rem 17rem 30rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-portfolio .portfolio-header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8.8rem;
+}
+
+.container-portfolio .portfolio-nav-bar {
+  padding: 0.3rem 0.4rem;
+  background-color: var(--background-color);
+  border-radius: 1.2rem;
+}
+.portfolio-nav-bar button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--gray-scale-700);
+  padding: 0.6rem 2.4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out;
+}
+
+.portfolio-nav-bar button.active {
+  background-color: var(--hover);
+  font-weight: 600;
+}
+
+.portfolio-container {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.card .img {
+  border-radius: 1rem;
+  padding-bottom: 1.6rem;
+  width: 43.8rem;
+}
+.card {
+  position: relative;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+  background-color: var(--hover);
+  transform: scale(1.06, 1.06);
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card div p {
+  width: 39.4rem;
+  height: 16.4rem;
+  padding-bottom: 1rem;
+}
+
+.card div a {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-default);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
