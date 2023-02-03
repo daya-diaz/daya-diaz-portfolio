@@ -20,6 +20,11 @@ body {
   --gray-scale-700: #4b2b1a;
   font-size: 62.5%;
 }
+h1 {
+  font-size: 6.4rem;
+  color: var(--gray-scale-600);
+  line-height: 125%;
+}
 
 h2 {
   font-weight: 500;
@@ -113,11 +118,6 @@ p {
   gap: 1.6rem;
 }
 
-.content-home h1 {
-  font-size: 6.4rem;
-  color: var(--gray-scale-600);
-  line-height: 125%;
-}
 .content-home h1 span {
   color: var(--primary-default);
 }
@@ -392,4 +392,68 @@ div.thirty {
   font-size: 2rem;
   line-height: 148%;
   color: var(--gray-scale-700);
+}
+
+section.aboutMe {
+  padding: 10.4rem 30rem;
+}
+
+.aboutMe-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8.8rem;
+}
+
+.aboutMe-main {
+  display: flex;
+  gap: 11.6rem;
+  align-items: center;
+}
+
+.aboutMe-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10.4rem;
+}
+
+.aboutMe-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.aboutMe-main p {
+  width: 44rem;
+}
+
+footer {
+  padding: 10.4rem 30rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--background-color);
+}
+
+footer h2 {
+  font-size: 4.8rem;
+  color: var(--gray-scale-700);
+  width: 51.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+}
+
+div.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+div.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 }
