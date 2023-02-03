@@ -451,9 +451,16 @@ div.contacts {
   align-items: flex-start;
 }
 
-div.contact {
+a.contact {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+  border-radius: 1.6rem;
+  padding-inline: 1.2rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+a.contact:hover {
+  background-color: var(--hover);
 }
