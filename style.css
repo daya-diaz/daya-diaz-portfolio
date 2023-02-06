@@ -97,7 +97,7 @@ p {
 }
 
 .container-home {
-  padding: 15rem 30rem;
+  padding: 24rem 30rem 10rem 30rem;
   background-color: var(--background-color);
   display: flex;
   flex-direction: row;
